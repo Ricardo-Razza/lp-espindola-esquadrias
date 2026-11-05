@@ -1,0 +1,71 @@
+:root {
+  --papel: #efe8dc;
+  --papel2: #e6ddcd;
+  --ink: #1a1a22;
+  --azul: #1c2a4e;
+  --verm: #c9302a;
+  --amar: #f2c200;
+  --cinza: #5a554c;
+  --borda: #1c2a4e33;
+  --lateral: 48px;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Archivo', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { background: var(--papel); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button { font: inherit; cursor: pointer; background: none; border: 0; color: inherit; }
+:focus-visible { outline: 3px solid var(--amar); outline-offset: 3px; }
+
+.lateral { padding-left: var(--lateral); padding-right: var(--lateral); }
+
+/* rótulo de seção: traço + texto em caixa alta */
+.rotulo {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--verm);
+}
+.rotulo::before { content: ''; width: 28px; height: 3px; background: currentColor; }
+
+.titulo-serif { font-family: var(--serif); font-weight: 400; font-size: 76px; line-height: .98; color: var(--azul); margin-top: 16px; }
+
+/* listras do logo: vermelho, azul, amarelo */
+.listras { display: inline-grid; gap: 3px; width: 28px; flex: none; }
+.listras i { display: block; height: 5px; }
+.listras i:nth-child(1) { background: var(--verm); }
+.listras i:nth-child(2) { background: var(--azul); }
+.listras i:nth-child(3) { background: var(--amar); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 16px 24px; border-radius: 40px; font-weight: 700; font-size: 15px;
+  transition: transform .15s ease, background-color .15s ease, color .15s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn--verm { background: var(--verm); color: #fff; }
+.btn--verm:hover { background: #a92420; }
+.btn--borda { border: 1.5px solid var(--azul); color: var(--azul); }
+.btn--borda:hover { background: var(--azul); color: var(--papel); }
+.btn--amar { background: var(--amar); color: var(--azul); }
+.btn--claro { border: 1.5px solid #ffffff88; color: #fff; }
+.btn--claro:hover { background: #fff; color: var(--verm); }
+
+/* entrada suave ao rolar (ativada pela diretiva appRevelar) */
+.revelar { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.revelar.visivel { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .revelar { opacity: 1; transform: none; transition: none; }
+  .btn { transition: none; }
+}
+
+@media (max-width: 700px) {
+  :root { --lateral: 20px; }
+  .titulo-serif { font-size: 44px; }
+}
