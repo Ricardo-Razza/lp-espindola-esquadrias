@@ -29,6 +29,16 @@ export function linkWhatsapp(mensagem = 'Olá! Vim pelo site e gostaria de um or
   return `https://wa.me/${EMPRESA.whatsapp}?text=${encodeURIComponent(mensagem)}`;
 }
 
+/** Fotos do carrossel do topo: use só fotos grandes, as pequenas ficam borradas em tela cheia */
+export const CARROSSEL = [
+  { foto: 'img/cozinha-azul-ampla.webp', legenda: 'Cozinha planejada azul-marinho', posicao: 'center 60%' },
+  { foto: 'img/cozinha-azul-ilha.webp', legenda: 'Ilha com pia e adega' },
+  { foto: 'img/fachada-loja.webp', legenda: 'Nossa loja em Imbé', posicao: '55% center' },
+  { foto: 'img/cozinha-azul-pia.webp', legenda: 'Armários e paneleiro sob medida' },
+  { foto: 'img/cozinha-mdf.webp', legenda: 'Cozinha em MDF' },
+  { foto: 'img/cozinha-azul-armarios.webp', legenda: 'Armários com portas de vidro' },
+];
+
 export interface Servico {
   titulo: string;
   texto: string;

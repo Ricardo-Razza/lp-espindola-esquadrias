@@ -33,7 +33,7 @@ import { EMPRESA, linkWhatsapp } from '../dados/empresa';
       backdrop-filter: blur(8px); border-bottom: 1px solid var(--borda);
     }
     .marca { display: flex; align-items: center; gap: 12px; }
-    .marca b { display: block; font-weight: 800; font-stretch: 115%; letter-spacing: .05em; font-size: 21px; color: var(--verm); line-height: 1; }
+    .marca b { display: block; font-weight: 800; font-stretch: 122%; letter-spacing: .05em; font-size: 21px; color: var(--verm); line-height: 1; }
     .marca small { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--azul); font-weight: 600; }
     nav { display: flex; gap: 30px; font-size: 14px; font-weight: 500; color: var(--azul); }
     nav a:hover { color: var(--verm); }
@@ -57,6 +57,12 @@ import { EMPRESA, linkWhatsapp } from '../dados/empresa';
       nav.aberto { display: flex; }
       nav a { padding: 14px 0; font-size: 17px; border-bottom: 1px solid var(--borda); }
       .marca b { font-size: 18px; }
+    }
+    /* celular: só logo + nome; o WhatsApp fica no botão fixo do rodapé */
+    @media (max-width: 700px) {
+      .topo { padding-top: 14px; padding-bottom: 14px; }
+      .marca small, .acoes, nav { display: none; }
+      .marca b { font-size: 20px; }
     }
   `,
 })

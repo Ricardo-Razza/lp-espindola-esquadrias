@@ -77,7 +77,7 @@ import { Revelar } from '../compartilhado/revelar.directive';
     .txt { background: var(--verm); color: #fff; padding: 70px 56px; display: flex; flex-direction: column; gap: 30px; }
     .txt .rotulo { color: #fff; }
     .txt .rotulo::before { background: var(--amar); }
-    h2 { font-family: var(--serif); font-weight: 400; font-size: 74px; line-height: .98; }
+    h2 { font-weight: 300; font-stretch: 122%; font-size: 56px; letter-spacing: -.035em; line-height: .95; }
     dl { display: grid; grid-template-columns: 120px 1fr; gap: 14px 20px; font-size: 16px; line-height: 1.45; border-top: 1px solid #ffffff55; padding-top: 24px; }
     dt { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; opacity: .75; padding-top: 3px; }
     dd a:hover { text-decoration: underline; }
@@ -86,7 +86,7 @@ import { Revelar } from '../compartilhado/revelar.directive';
     .mapa { display: grid; grid-template-columns: 560px 1fr; gap: 70px; padding-top: 100px; padding-bottom: 100px; align-items: start; }
     .quadro { aspect-ratio: 1; border: 2px solid var(--azul); background: var(--papel2); }
     iframe { width: 100%; height: 100%; border: 0; display: block; }
-    h3 { font-family: var(--serif); font-weight: 400; font-size: 56px; color: var(--azul); line-height: 1; margin: 16px 0 30px; }
+    h3 { font-weight: 300; font-stretch: 122%; font-size: 40px; letter-spacing: -.03em; color: var(--azul); line-height: 1; margin: 16px 0 30px; }
     .horas { list-style: none; border-top: 1px solid var(--azul); }
     .horas li { display: flex; justify-content: space-between; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--borda); font-size: 17px; color: var(--azul); }
     .horas li span:first-child { font-weight: 600; }
@@ -94,7 +94,7 @@ import { Revelar } from '../compartilhado/revelar.directive';
     .redes { display: flex; gap: 12px; margin-top: 34px; flex-wrap: wrap; }
 
     .rodape { background: var(--azul); color: var(--papel); padding-top: 46px; padding-bottom: 26px; overflow: hidden; }
-    .wm { display: flex; align-items: center; gap: 30px; font-weight: 800; font-stretch: 115%; font-size: clamp(44px, 10.4vw, 150px); letter-spacing: -.02em; line-height: .8; }
+    .wm { display: flex; align-items: center; gap: 30px; font-weight: 800; font-stretch: 122%; font-size: clamp(44px, 10.4vw, 150px); letter-spacing: -.02em; line-height: .8; }
     .wm .listras { width: .79em; gap: .08em; }
     .wm .listras i { height: .15em; }
     .base { display: flex; justify-content: space-between; gap: 12px; margin-top: 36px; color: #b9c0d3; font-size: 13px; }
@@ -109,11 +109,11 @@ import { Revelar } from '../compartilhado/revelar.directive';
       .visita { grid-template-columns: 1fr; }
       .foto { min-height: 260px; }
       .txt { padding: 44px 20px 50px; }
-      h2 { font-size: 46px; }
+      h2 { font-size: 36px; }
       dl { grid-template-columns: 90px 1fr; font-size: 15px; }
       .ctas .btn { flex: 1; }
       .mapa { grid-template-columns: 1fr; padding-top: 56px; padding-bottom: 56px; gap: 30px; }
-      h3 { font-size: 34px; }
+      h3 { font-size: 28px; }
       .horas li { font-size: 14px; }
       .wm { gap: 12px; }
       .base { flex-direction: column; gap: 6px; padding-bottom: 70px; }

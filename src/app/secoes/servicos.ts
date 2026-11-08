@@ -11,7 +11,7 @@ import { Revelar } from '../compartilhado/revelar.directive';
       <div class="cab" appRevelar>
         <div>
           <span class="rotulo">Serviços</span>
-          <h2 class="titulo-serif">O que a Espíndola faz</h2>
+          <h2 class="titulo">O que a Espíndola faz</h2>
         </div>
         <p>Da janela da fachada ao armário da cozinha. Escolha o que você precisa e fale direto com a gente.</p>
       </div>
@@ -48,7 +48,7 @@ import { Revelar } from '../compartilhado/revelar.directive';
     .img img { object-fit: cover; transition: transform .5s ease; }
     .card:hover .img img { transform: scale(1.04); }
     .c { padding: 22px 22px 24px; display: flex; flex-direction: column; flex: 1; }
-    h3 { font-weight: 600; font-stretch: 112%; font-size: 24px; color: var(--azul); letter-spacing: -.01em; }
+    h3 { font-weight: 500; font-stretch: 122%; font-size: 23px; color: var(--azul); letter-spacing: -.01em; }
     p { font-size: 15px; line-height: 1.5; color: var(--cinza); margin: 10px 0 18px; flex: 1; }
     .c a { font-weight: 700; font-size: 14px; color: var(--verm); }
     .c a:hover { text-decoration: underline; }

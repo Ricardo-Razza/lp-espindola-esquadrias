@@ -11,7 +11,7 @@ import { Revelar } from '../compartilhado/revelar.directive';
       <div class="cab" appRevelar>
         <div>
           <span class="rotulo">Trabalhos</span>
-          <h2 class="titulo-serif">Feito pela Espíndola</h2>
+          <h2 class="titulo">Feito pela Espíndola</h2>
         </div>
         <div class="filtros" role="group" aria-label="Filtrar trabalhos">
           @for (c of categorias; track c.id) {
